@@ -1,0 +1,74 @@
+* {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  background: hsl(212, 45%, 89%);
+}
+
+.vcard {
+  border-radius: 20px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0px 19px 20px -24px rgba(0, 0, 0, 0.5);
+  animation: fade 2s forwards;
+}
+.vcard .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 40px;
+  gap: 20px;
+}
+.vcard .wrapper .content-image {
+  width: 240px;
+  height: 240px;
+}
+.vcard .wrapper .content-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.vcard .wrapper .content-text {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
+.vcard .wrapper .content-text h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 20ch;
+  color: hsl(218, 44%, 22%);
+}
+.vcard .wrapper .content-text h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  width: 26ch;
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 300px) {
+  .vcard {
+    scale: 0.8;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
